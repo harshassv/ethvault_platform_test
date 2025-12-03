@@ -39,6 +39,7 @@ export function Navbar() {
     { name: "Stake", href: "/stake" },
     { name: "Leaderboard", href: "/leaderboard" },
     { name: "Governance", href: "/governance" },
+    { name: "Notes", href: "/notes" },
   ]
 
   useEffect(() => {
