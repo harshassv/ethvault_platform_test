@@ -5,7 +5,7 @@ const router = express.Router();
 let notes = [];
 let nextId = 1;
 
-// Create a new note
+// New note creation
 router.post("/notes", (req, res) => {
   const { title, content } = req.body;
   if (!title || !content) {
@@ -24,7 +24,7 @@ router.post("/notes", (req, res) => {
   });
 });
 
-// Get all notes
+// Getting all notes
 router.get("/notes", (req, res) => {
   res.status(200).json({
     success: true,

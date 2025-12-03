@@ -46,6 +46,7 @@ export default function NotesPage() {
     setEditingId(note.id);
     setTitle(note.title);
     setContent(note.content);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleDelete = async (id: number) => {
